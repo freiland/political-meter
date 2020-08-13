@@ -1,20 +1,33 @@
 $(document).ready(function() {
   $("form#insurance").submit(function(event) {
     const age = parseInt($("input#age").val());
-    const gender = $("select#region").val();
+    const region = $("select#region").val();
+    const economic = $("select#economic").val();
+    const guns = $("select#guns").val();
 
-    if (age) {
-      let quote = (100 - age) * 3;
-      if (gender === 'male' && age < 26) {
-        quote += 50;
+    // selects age from user
+
+    if ((region === 'south' || 'midwest') && age >= 50 && (economc === lowerClass || middleClass || upperClass)) {
+        $("#conservative").show();
       }
+    
+    else if (guns = "True") {
+      $("#conservative").show();
+    }
 
-      $("#rate").text(quote);
-      $("#quote").show();
-      
-    } else {
+    else if (region="west") {
+      $("#liberal").show();
+    }
+
+    else if (region="northEast") {
+      $("#moderate").show();
+    }
+ 
+    else {
       alert('Please enter your age.');
     }
+
+
 
     event.preventDefault();
   });
