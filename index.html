@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Political Stance Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Liberal, Conservative, or Moderate</h1>
+
+    <p>To determine your political leaning, we will need to know more about you:</p>
+
+    <form id="quiz">
+      <label for="age">Age</label>
+      <input id="age" type="text">
+      <label for="region">Region</label>
+      <select id="region">
+        <option value="northEast">North-East</option>
+        <option value="south">South</option>
+        <option value="west">West</option>
+        <option value="midWest">Mid-West</option>
+      <label for="socioEconomicClass">Socio-Economic Class</label>
+      <select id="socioEconomicClass">
+        <option value="lowerClass">Lower class</option>
+        <option value="middleClass">Middle class</option>
+        <option value="upperClass">Lower class</option>
+      </select>
+      <label for="2a">Do you own a firearm?</label>
+      <select id="2a">
+        <option value="True">Yes</option>
+        <option value="False">No</option>
+      
+
+      <button type="submit" class="btn">Calculate my quote</button>
+    </form>
+
+    <div id="quote">
+      <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+    </div>
+  </div>
+</body>
+</html>
