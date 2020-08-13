@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#insurance").submit(function(event) {
+  $("form#quiz").submit(function(event) {
     const age = parseInt($("input#age").val());
     const region = $("select#region").val();
     const economic = $("select#economic").val();
@@ -7,8 +7,10 @@ $(document).ready(function() {
 
     // selects age from user
 
-    if ((region === 'south' || 'midwest') && age >= 50 && (economc === lowerClass || middleClass || upperClass)) {
-        $("#conservative").show();
+    if (region === 'south') {
+      alert("hello!");
+      $("#conservative").show();
+
       }
     
     else if (guns = "True") {
